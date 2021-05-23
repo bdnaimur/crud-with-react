@@ -26,7 +26,7 @@ function App() {
           <Route path="/read">
             <Read />
           </Route>
-          <Route path="/update">
+          <Route path="/update/:updateKey">
             <Update />
           </Route>
           <Route path="/delete">

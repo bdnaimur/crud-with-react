@@ -27,19 +27,20 @@ const Form = () => {
             getDataPassword.password = password;
             setFormData(getDataPassword)
         }
+        
     }
     const handleSubmit = e =>{
         e.preventDefault();
-
-    const url = `http://localhost:5055/addUsers`;
-    fetch(url, {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json'
-      },
-      body: JSON.stringify(fromData)
-    })
-      .then(res => console.log('server side response', res))
+        const url = `http://localhost:5055/addUsers`;
+        fetch(url, {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(fromData)
+        })
+        .then(res => console.log('server side response', res))
+        e.target.reset();
   };
 
     return (

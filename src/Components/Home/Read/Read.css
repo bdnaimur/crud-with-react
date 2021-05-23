@@ -1,0 +1,13 @@
+.table-style{
+    width: 50%;
+    margin: auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.table-style th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  .table-style tr:hover {
+    background-color: #f5f5f5;
+  }
