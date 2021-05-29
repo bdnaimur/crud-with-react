@@ -11,6 +11,7 @@ import Read from './Components/Home/Read/Read';
 import Update from './Components/Home/Update/Update';
 import Delete from './Components/Home/Delete/Delete';
 import Home from './Components/Home/Home/Home';
+import Pagination from './Components/Pagination/Pagination';
 
 function App() {
   return (
@@ -23,11 +24,14 @@ function App() {
           <Route path="/insert">
             <Insert />
           </Route>
+          <Route path="/page/:readId">
+            <Read />
+          </Route>
           <Route path="/read">
             <Read />
           </Route>
           <Route path="/update/:updateKey">
-            <Update />
+            <Update  />
           </Route>
           <Route path="/delete">
             <Delete />

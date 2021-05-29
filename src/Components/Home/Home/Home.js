@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css'
 const Home = () => {
     return (
@@ -9,11 +10,11 @@ const Home = () => {
                     <div className="col-md-10">
                         <div className="main-menu">
                             <ul>
-                                <li><a href="home">Home</a></li>
-                                <li><a href="insert">Insert</a></li>
-                                <li><a href="read">Read</a></li>
-                                <li><a href="update">Update</a></li>
-                                <li><a href="delete">Delete</a></li>
+                                <li><Link to="/home">Home</Link></li>
+                                <li><Link to="/insert">Insert</Link></li>
+                                <li><Link to="/read">Read</Link></li>
+                                <li><Link to="/update">Update</Link></li>
+                                <li><Link to="/delete">Delete</Link></li>
                             </ul>
                         </div>
                     </div>

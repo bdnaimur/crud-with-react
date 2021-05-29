@@ -1,8 +1,16 @@
+.heading-style{
+  margin-bottom: 50px;
+}
 .table-style{
     width: 50%;
-    margin: auto;
+    margin:auto;
     border-spacing: 0px;
     border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px lightgrey;
+}
+.table-style th{
+  background-color: lightsteelblue;
 }
 .table-style th, td {
     padding: 10px;
@@ -10,4 +18,14 @@
   }
   .table-style tr:hover {
     background-color: #f5f5f5;
+  }
+  .pagination li{
+   display: inline-block;
+   padding: 10px 20px;
+   border-radius: 10px;
+   background-color:aqua;
+   margin: 30px 10px;
+  }
+  .pagination li a{
+    text-decoration: none;
   }

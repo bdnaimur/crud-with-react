@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import Home from '../../Home/Home';
 
 const Form = () => {
     const [fromData, setFormData] = useState({
         name: "",
         email: "",
-        password: ""
+        password: "",
+        display: true
     });
     const handleBlur = e =>{
         e.preventDefault();
